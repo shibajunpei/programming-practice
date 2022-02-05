@@ -23,17 +23,32 @@
       width: 500px;
       height: 500px;
     }
+
+    li {
+      list-style-type: none;
+    }
   </style>
   <body>
     <div>
-      <h1>ｈ１は１番大きい見出し</h1>
-      <h2>ｈ２は２番目に大きい見出し</h2>
-      <h3>ｈ３は３番目に大きい見出し</h3>
-      <h4>ｈ４は４番目に大きい見出し</h4>
-      <h5>ｈ５は５番目に大きい見出し</h5>
-      <h6>ｈ６は１番小さい見出し</h6>
+      <h1 id="head">プログラミングの勉強方法</h1>
       <img src="https://picsum.photos/id/1/200/300" alt="Sample画像" />
-      <p>プログラミングの勉強できていますか？</p>
+      <p>プログラミングの勉強にまず初めに必要なツール</p>
+      <ul>
+        <li>GoogleChrome</li>
+        <li>VSCode</li>
+        <li>GitHub</li>
+      </ul>
+      <a
+        href="https://github.com/shibajunpei/programming-practice"
+        target="_blank"
+        >純平のGitHubのサイトへ遷移する</a
+      >
     </div>
   </body>
+  <script type="text/javascript">
+    const headElement = document.getElementById("head");
+    headElement.onclick = () => {
+      alert("プログラミングの勉強方法をクリックしました");
+    };
+  </script>
 </html>
